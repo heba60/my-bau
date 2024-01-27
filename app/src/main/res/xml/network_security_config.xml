@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">reg.amman.bau.edu.jo</domain>
+        <domain includeSubdomains="true">aau.edu.jo/</domain>
+        <domain includeSubdomains="true">167.86.67.52</domain>
+        <domain includeSubdomains="true">hashtechsllc.com</domain>
+    </domain-config>
+</network-security-config>

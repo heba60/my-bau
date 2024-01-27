@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "946810398332",
+    "project_id": "my-bau-f20f2",
+    "storage_bucket": "my-bau-f20f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946810398332:android:e86cb48158f3dfe9564bf9",
+        "android_client_info": {
+          "package_name": "com.uni.bau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946810398332-5da6an2tn1qbagtbt7lp025umqgtl1sh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uni.bau",
+            "certificate_hash": "9cc198073384942197e5297cc90914fdb05d225d"
+          }
+        },
+        {
+          "client_id": "946810398332-eo4l9e27hdhh4ua7e5ikn61jj41p485c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv3VvitDXLtNKceFC1lhcmomPWFq-s3Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946810398332-eo4l9e27hdhh4ua7e5ikn61jj41p485c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

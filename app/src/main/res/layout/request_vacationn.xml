@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+
+            <TextView
+                style="@style/AppTheme.TextView.big"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:gravity="center_vertical"
+                android:text="طلب إجازة"
+                android:textColor="@color/black_text_normal" />
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back_arrow_black" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/AppTheme.TextView.normal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:text="الرجاء تعبة جميع المعلومات لطلب الإجازة"
+            android:textColor="@color/black_text_normal" />
+
+
+        <LinearLayout
+            android:id="@+id/fromDateLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fromDate"
+                style="@style/AppTheme.TextView.normal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:hint="إضغط لاختيار تاريخ بداية الإجازة"
+
+                android:gravity="center_vertical"
+                android:textColor="@color/black_text_normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/toDateLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/toDate"
+                style="@style/AppTheme.TextView.normal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:hint="إضغط لاختيار تاريخ نهاية الإجازة"
+
+                android:textColor="@color/black_text_normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_white_shape_min_border_gray"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_35sdp"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/icon_gray_arrow_down" />
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:checked="false"
+             android:id="@+id/accpet"
+            android:buttonTint="@color/dark_green"
+            android:text="موافقة المسؤول المباشر">
+
+        </CheckBox>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppTheme.TextView.normal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="إسم المسؤول المباشر عنك في العمل:"
+
+                android:textColor="@color/black_text_normal" />
+
+            <EditText
+                android:id="@+id/mangerName"
+                style="@style/AppTheme.TextView.normal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_text_normal"
+                android:textColorHighlight="@color/text_color_high_light"
+                android:textColorLink="@color/text_color_high_light"
+                android:textCursorDrawable="@drawable/color_cursor"
+                />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            android:background="@drawable/dark"
+            android:gravity="center"
+            android:text="تقديم طلب إجازة"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

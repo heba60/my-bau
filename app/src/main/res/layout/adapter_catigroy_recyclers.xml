@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.uni.bau.utilities.CustomFontBold
+        android:layout_width="match_parent"
+        android:text="لا يوجد مواد مسجلة حاليا يرجى مراجعة القبول والتسجيل"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/noScudle"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </com.uni.bau.utilities.CustomFontBold>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/sliderLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.uni.bau.utilities.AutoScrollViewPager
+                        android:id="@+id/imagesViewPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    <com.uni.bau.utilities.CirclePageIndicator
+                        android:id="@+id/imagesPageIndicator"
+                        class="CirclePageIndicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignBottom="@+id/imagesViewPager"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

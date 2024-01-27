@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_white_shape_min"
+
+    android:layout_marginTop="@dimen/_4sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            style="@style/AppTheme.TextView.big"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textSize="13sp"
+            android:id="@+id/semsText"></TextView>
+
+        <TextView
+            style="@style/AppTheme.TextView.big"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:id="@+id/year"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_text_normal" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+
+        android:gravity="center_vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            style="@style/AppTheme.TextView.big"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textSize="13sp"
+            android:id="@+id/hours"></TextView>
+
+        <TextView
+            style="@style/AppTheme.TextView.big"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:id="@+id/gpa"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_text_normal" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/marksRV"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+        <TextView
+            style="@style/AppTheme.TextView.big"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+
+            android:gravity="center_vertical"
+            android:text="تفاصيل الراتب"
+            android:textColor="@color/black_text_normal" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back_arrow_black" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/background_white_shape_min_border_gray"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/_35sdp"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/spinnerYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/icon_gray_arrow_down" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/background_white_shape_min_border_gray"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/_35sdp"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/icon_gray_arrow_down" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <com.uni.bau.utilities.CustomFontBold
+            android:text="التاريخ : "
+            android:layout_width="0dp"
+            android:layout_weight="0.23"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+        <com.uni.bau.utilities.CustomFontBold
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <com.uni.bau.utilities.CustomFontBold
+            android:text="البنك : "
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+        <com.uni.bau.utilities.CustomFontBold
+            android:id="@+id/bank"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <com.uni.bau.utilities.CustomFontBold
+            android:text="صافي الراتب : "
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+        <com.uni.bau.utilities.CustomFontBold
+            android:id="@+id/netsal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <com.uni.bau.utilities.CustomFontBold
+            android:text="اجمالي الراتب : "
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+        <com.uni.bau.utilities.CustomFontBold
+            android:id="@+id/soial"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/add"
+                android:layout_height="40dp">
+
+                <TextView
+                    style="@style/AppTheme.TextView.big"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/dark"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:text="العلاوات"
+                    android:textColor="@color/black_text_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:orientation="horizontal"
+                android:id="@+id/addinner"
+                android:weightSum="2"
+                android:layout_height="30dp">
+
+                <TextView
+                    style="@style/AppTheme.TextView.big"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:textSize="14dp"
+                    android:textAlignment="center"
+                    android:text="وصف العلاوة"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/AppTheme.TextView.big"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:textSize="14dp"
+                    android:textAlignment="center"
+                    android:text="قيمة العلاوات"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/calendarRecycler1"
+                    android:layout_width="0dp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/minuse"
+                android:layout_height="40dp">
+
+                <TextView
+                    style="@style/AppTheme.TextView.big"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/dark"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:text="الاقتطاعات"
+                    android:textColor="@color/black_text_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/minuseinner"
+
+                android:layout_height="30dp">
+
+                <TextView
+                    style="@style/AppTheme.TextView.big"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:textSize="14dp"
+                    android:textAlignment="center"
+                    android:text="وصف الاقتطاع"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/AppTheme.TextView.big"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:textSize="14dp"
+                    android:textAlignment="center"
+                    android:text="قيمة الاقتطاع"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/calendarRecycler2"
+                    android:layout_width="0dp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

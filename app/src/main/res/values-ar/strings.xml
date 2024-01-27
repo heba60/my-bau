@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My AAU</string>
+    <string name="title_tut_1">معرفة علاماتك</string>
+    <string name="title_tut_2">التنبيهات والاشعارات</string>
+    <string name="title_tut_3">التواصل مع الهيئة التدريسية</string>
+    <string name="des_tut_1">تمكن من معرفة علاماتك وتقدمك الاكاديمي مباشرة</string>
+    <string name="des_tut_2">سيسهل التطبيق وصول اللتنبيهات واشعارات الهيئة التدريسية / الاكاديمية مباشرة</string>
+    <string name="des_tut_3">لتتمكن من اللتواصل مع الهيئة التدريسية وزملاء الدراسة بشكل مباشر وفعال</string>
+    <string name="noPlan">لا يوجد بيانات</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="linked_in">النكيد إن</string>
+    <string name="resend_code">أعد إرسال الرمز</string>
+    <string name="otp_message">لقد أرسنا لك رمز مكون من 6 أرقام على رقم الهاتف . يرجى التحقق من رسائلك .</string>
+    <string name="confirm_account">تأكيد الحساب</string>
+    <string name="confirm">تأكيد</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="active_account">فعل حسابك</string>
+    <string name="please_enter_otp_to_send_sms">يرجى إدخال رقم الهاتف الخاص بك. لإزسال رمز OTP في رسالة.</string>
+    <string name="forget_password">هل نسيت كلمة المرور؟</string>
+    <string name="password">كلمة المرور</string>
+    <string name="user_name">إسم المستخدم</string>
+    <string name="skip">تخطي</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="login_or_sign_up">تسجيل الدخول الى حساب موجود .</string>
+    <string name="home">الرئيسيه</string>
+    <string name="mark">العلامات</string>
+    <string name="more">المزيد</string>
+    <string name="press_again_to_exit">اضغط مره اخرى للخروج</string>
+    <string name="class_id">رقم الشعبة: %1$s</string>
+    <string name="enter_username">الرجاء إدخال اسم المستخدم</string>
+    <string name="enter_password">الرجاء إدخال كلمة السر</string>
+
+    <string name="calender">التقويم السنوي</string>
+    <string name="available_chance">الفرص المتاحة</string>
+    <string name="news">الأخبار</string>
+
+    <string name="sign_out">تسجيل الخروج</string>
+
+    <string name="scientific_progress">التقدم العلمي</string>
+
+    <string name="errorLogin">اسم المستخدم</string>
+    <string name="errorLogin2">نبذة عن الجامعة</string>
+
+    <string name="enter_valid_phone">الرجاء إدخال رقم هاتف صحيح</string>
+    <string name="enter_valid_otp">الرجاء إدخال رمز تحقق صحيح</string>
+
+    <string name="send_empty_message">لا يمكن ارسال رسالة فارغة</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="colorPrimary">#F2F0E4</color>
+    <color name="colorPrimaryDark">#F2F0E4</color>
+    <color name="colorAccent">#F2F0E4</color>
+    <color name="gray_colorsdk">#737373</color>
+    <color name="shimper_color">#C2C2C2</color>
+
+    <color name="green_normal">#00B555</color>
+    <color name="green_tran">#9000B555</color>
+    <color name="green_dark">#07743F</color>
+
+
+    <color name="gray_light">#BAB9B7</color>
+    <color name="gray_dark">#979797</color>
+
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_text_light">#757985</color>
+    <color name="black_text_light">#4A4A4A</color>
+    <color name="black_text_normal">#000000</color>
+    <color name="text_color_high_light">#BAB9B7</color>
+
+    <color name="darkBlue">#004ba0</color>
+    <color name="red">#d32f2f</color>
+    <color name="green">#8cc34b</color>
+    <color name="dark_green"> #054623</color>
+
+
+    <color name="Bau_Title_BC">#3f8048</color>
+    <color name="Bau_Title_FC">#ffffff</color>
+    <color name="Bau_Color_1">#3f8048</color>
+    <color name="Bau_Color_2">#000000</color>
+    <color name="Bau_Color_3">#3f8048</color>
+    <color name="Bau_Color_4">#000000</color>
+    <color name="Bau_Color_5">#eeeeee</color>
+    <color name="Bau_Color_6">#670d0d</color>
+    <color name="Bau_Color_Control_BG">#fff6df</color>
+
+
+
+</resources>

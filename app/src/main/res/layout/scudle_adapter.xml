@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+android:background="@drawable/facke_card"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/r_color"
+            android:layout_width="match_parent"
+            android:background="#722487"
+            android:layout_height="wrap_content">
+
+            <com.uni.bau.utilities.CustomFontBold
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="marquee"
+                android:gravity="start"
+                android:maxLines="2"
+
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical">
+
+
+        <com.uni.bau.utilities.CustomFontBold
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:id="@+id/sec"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+
+
+        <com.uni.bau.utilities.CustomFontBold
+            android:ellipsize="marquee"
+            android:gravity="start"
+            android:id="@+id/trhird"
+
+            android:layout_height="wrap_content"
+
+            android:layout_width="match_parent"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible">
+
+
+
+        </com.uni.bau.utilities.CustomFontBold>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+
+
+                android:src="@drawable/location_icon">
+            </ImageView>
+            <com.uni.bau.utilities.CustomFontBold
+                android:ellipsize="marquee"
+                android:gravity="right"
+                android:id="@+id/fourth"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/time_icon">
+            </ImageView>
+
+            <com.uni.bau.utilities.CustomFontBold
+                android:ellipsize="marquee"
+                android:gravity="right"
+                android:id="@+id/five"
+                android:text="الابالبتل"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+</LinearLayout>

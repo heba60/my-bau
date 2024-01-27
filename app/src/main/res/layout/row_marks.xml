@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@color/white"
+        android:id="@+id/backgroundWhite"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:weightSum="3"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/txtLectureName"
+
+            style="@style/AppTheme.TextView.big"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+
+            android:textColor="@color/black_text_normal" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                style="@style/AppTheme.TextView.big"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/txtMark"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                android:text="3H"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textColor="@color/black_text_normal" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/viewIndi"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@color/gray_colorsdk"
+        android:layout_height="0.5dp"></View>
+</LinearLayout>

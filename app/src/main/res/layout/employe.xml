@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/AppTheme.TextView.big"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="بصمة الموظف"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_280sdp"
+            android:src="@drawable/ic_back_arrow_black" />
+    </RelativeLayout>
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/background_white_shape_min_border_gray"
+        android:orientation="vertical">
+
+        <!-- Year Spinner Row -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_white_shape_min_border_gray"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_35sdp"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/spinnerYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/icon_gray_arrow_down" />
+        </LinearLayout>
+
+        <!-- Month Spinner Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_white_shape_min_border_gray"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_35sdp"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/icon_gray_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecycler"
+        android:layout_width="269dp"
+        android:layout_height="493dp"
+        android:layout_marginTop="@dimen/_153sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:background="@drawable/dark" />
+
+</RelativeLayout>

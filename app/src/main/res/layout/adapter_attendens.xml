@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.uni.bau.utilities.CustomFontBold
+        android:ellipsize="marquee"
+        android:gravity="start"
+        android:id="@+id/first"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+    <com.uni.bau.utilities.CustomFontBold
+        android:ellipsize="marquee"
+        android:gravity="start"
+        android:id="@+id/sec"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+    <com.uni.bau.utilities.CustomFontBold
+        android:ellipsize="marquee"
+        android:gravity="start"
+        android:id="@+id/trhird"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+    <com.uni.bau.utilities.CustomFontBold
+        android:ellipsize="marquee"
+        android:gravity="start"
+        android:id="@+id/fourth"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="visible"></com.uni.bau.utilities.CustomFontBold>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_4sdp"
+        android:background="@color/gray_dark"
+        android:layout_height="1dp">
+
+    </View>
+</LinearLayout>

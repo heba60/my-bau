@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".ui.Activites.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scaleX="-1"
+        android:src="@drawable/ic_back_arrow_black" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/bau_logo" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/AppTheme.TextView.big"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/loginn"
+                android:textColor="@color/black_text_normal"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/text_color_high_light"
+                android:gravity="right"
+                android:hint="@string/user_name"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:textAlignment="gravity"
+                android:textColor="@color/black_text_normal"
+                android:textColorHighlight="@color/text_color_high_light"
+                android:textColorLink="@color/text_color_high_light"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <!--        android:text="Marah2000"-->
+            <!--        android:text="1800704001"-->
+
+
+            <!--        android:text="Marah2000"-->
+            <!--        android:text="1800704001"-->
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:backgroundTint="@color/text_color_high_light"
+                android:gravity="right"
+
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:textAlignment="gravity"
+                android:textColor="@color/black_text_normal"
+                android:textColorHighlight="@color/text_color_high_light"
+                android:textColorLink="@color/text_color_high_light"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/tvForgetPassword"
+                style="@style/AppTheme.TextView.normal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/forget_password"
+                android:textColor="@color/black_text_normal"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/dark"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+
+
+</LinearLayout>
