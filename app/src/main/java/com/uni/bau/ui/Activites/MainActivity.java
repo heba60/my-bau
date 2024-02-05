@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             @Override
             public void onSuccess(Object responseObject, String responseMessage) {
                 ProgressUtil.INSTANCE.hideLoading();
-                getStudentCall();
+               // getStudentCall();
             }
 
             @Override
@@ -118,7 +118,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     userLoginModel.setFacility("app");
                     e.printStackTrace();
                 }
-                SharedPreferencesHelper.putSharedPreferencesObject(MainActivity.this, SharedPrefConstants.login, userLoginModel);
+
+
+
+              //  SharedPreferencesHelper.putSharedPreferencesObject(MainActivity.this, SharedPrefConstants.login, userLoginModel);
             }
 
             @Override

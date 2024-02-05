@@ -49,6 +49,16 @@ public class UserProfileModel implements Serializable {
     @Expose
     private String major;
 
+    private String collage;
+
+    public String getCollage() {
+        return collage;
+    }
+
+    public void setCollage(String collage) {
+        this.collage = collage;
+    }
+
     public String getMajor() {
         return major;
     }

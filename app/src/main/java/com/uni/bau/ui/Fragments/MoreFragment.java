@@ -67,6 +67,13 @@ public class MoreFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_more, container, false);
         TextView tvName = rootView.findViewById(R.id.tvName);
         TextView tvNumber = rootView.findViewById(R.id.tvNumber);
+        TextView tvCollage = rootView.findViewById(R.id.tvCollage);
+
+        try {
+            tvCollage.setText(Html.fromHtml(new Utils().getUserData(getActivity()).getCollage()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         try {
             tvNumber.setText(Html.fromHtml(new Utils().getUserData(getActivity()).getUsername()));

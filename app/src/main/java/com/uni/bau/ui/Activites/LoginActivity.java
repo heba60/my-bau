@@ -130,12 +130,17 @@ public class LoginActivity extends AppCompatActivity {
                     ProgressUtil.INSTANCE.showWarningPopup(context, getString(R.string.enter_password));
                     return;
                 }
-                if (etUserName.getText().length() == 5) {
-                    ProgressUtil.INSTANCE.showLoading(LoginActivity.this);
-                    new SoapRequestTask().execute();
-                } else {
-                    postLogin();
-                }
+
+                ProgressUtil.INSTANCE.showLoading(LoginActivity.this);
+                new SoapRequestTask().execute();
+
+//
+//                if (etUserName.getText().length() == 5) {
+//                    ProgressUtil.INSTANCE.showLoading(LoginActivity.this);
+//                    new SoapRequestTask().execute();
+//                } else {
+//                    postLogin();
+//                }
 
             }
         });
@@ -205,18 +210,31 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     }
-    private void drLogin(String name,String Facility,String userType) {
+
+    private void drLogin(String name, String Facility, String userType, String collage) {
         UserProfileModel userProfileModel = new UserProfileModel();
         userProfileModel.setUsername(etUserName.getText().toString());
         userProfileModel.setPassword(etPassword.getText().toString());
         userProfileModel.setName(name);
         userProfileModel.setFacility(Facility);
         userProfileModel.setUserType(userType);
-       // userProfileModel.setUserType("DR");
-        finish();
-        Intent intent = new Intent(LoginActivity.this, DrMainActivity.class);
-        startActivity(intent);
-        SharedPreferencesHelper.putSharedPreferencesObject(context, SharedPrefConstants.login, userProfileModel);
+        userProfileModel.setCollage(collage);
+
+        //TODO Here the main change of the code
+
+        if (etUserName.getText().toString().length() == 5) {
+            SharedPreferencesHelper.putSharedPreferencesObject(context, SharedPrefConstants.login, userProfileModel);
+            Intent intent = new Intent(LoginActivity.this, DrMainActivity.class);
+            startActivity(intent);
+            finish();
+        } else {
+            userProfileModel.setUserType("USER");
+            SharedPreferencesHelper.putSharedPreferencesObject(context, SharedPrefConstants.login, userProfileModel);
+            finish();
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class).putExtra("userProfileModel", userProfileModel);
+            startActivity(intent);
+        }
+
     }
 
     @Override
@@ -252,8 +270,10 @@ public class LoginActivity extends AppCompatActivity {
                     userProfileModel.setUsername(etUserName.getText().toString());
                     userProfileModel.setPassword(etPassword.getText().toString());
                     userProfileModel.setUserType("USER");
+                    SharedPreferencesHelper.putSharedPreferencesObject(context, SharedPrefConstants.login, userProfileModel);
+
                     finish();
-                    Intent intent = new Intent(LoginActivity.this, VerificationActivity.class).putExtra("userProfileModel", userProfileModel);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class).putExtra("userProfileModel", userProfileModel);
                     startActivity(intent);
                 }
 
@@ -354,8 +374,8 @@ public class LoginActivity extends AppCompatActivity {
                 result = doc.getElementsByTagName("GetUserInfoMinResult").item(0).getChildNodes().item(0).getNodeValue();
                 JSONObject jsonObject = new JSONObject(result);
 
-                drLogin(jsonObject.getString("userfullname"),jsonObject.getString("userspecName"),
-                        jsonObject.getString("usertype")  );
+                drLogin(jsonObject.getString("userfullname"), jsonObject.getString("userspecName"),
+                        jsonObject.getString("usertype"), jsonObject.getString("usercolName"));
             } catch (Exception e) {
                 e.printStackTrace();
             }
